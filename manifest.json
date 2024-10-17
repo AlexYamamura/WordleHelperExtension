@@ -1,0 +1,40 @@
+{
+    "manifest_version": 3,
+    "name": "Wordle Helper",
+    "version": "1.0",
+    "description": "Analyze current worldle options and provide possible word list",
+    "icons" : {
+        "32": "images/wordle-icon.png"
+    },
+    "content_scripts": [
+        {
+        "js": ["scripts/jquery-3.7.1.min.js", "scripts/content.js"],
+        "matches": [
+            "https://*.nytimes.com/games/wordle/*"
+        ]
+        }
+    ],
+    "action": {
+        "default_icon": "images/wordle-icon.png",
+        "default_popup": "html/popup.html"
+    },
+    "background": {
+        "service_worker": "services/service_worker.js",
+        "type": "module"
+    },
+    "permissions": [
+        "sidePanel",
+        "contextMenus",
+        "tabs",
+        "storage"
+    ],
+    "side_panel": {
+        "default_path" : "html/sidePanel.html"
+    },
+    "web_accessible_resources": [
+        {
+            "resources": ["resources/*"],
+            "matches": ["<all_urls>"]
+        }
+    ]
+}
