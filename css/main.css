@@ -30,20 +30,18 @@
 .wordItem:hover {
     background-color: #c9b458;
     box-shadow: #c9b458 0 2px 4px,#c9b458 0 7px 13px -3px,#c9b458 0 -3px 0 inset;
-    transform: translateY(-2px);
 }
 
 .wordItem:active {
     background-color: #c9b458;
     box-shadow: #c9b458 0 3px 7px inset;
-    transform: translateY(2px);
 }
 
 .wordItem:after {
   background-clip: padding-box;
-  /* border: solid transparent;
+  border: solid transparent;
   border-radius: 16px;
-  border-width: 0 0 4px; */
+  border-width: 0 0 4px;
   bottom: -4px;
   content: "";
   left: 0;
@@ -53,6 +51,7 @@
   z-index: -1;
 }
 
-/* .wordItem:focus {
+.wordItem:focus {
+  background-color: #c9b458;
   box-shadow: #c9b458 0 0 0 1.5px inset, #c9b458 0 2px 4px, #c9b458 0 7px 13px -3px, #c9b458 0 -3px 0 inset;
-} */
+}
