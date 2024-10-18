@@ -7,6 +7,10 @@
     text-align: center;
 }
 
+.external {
+  font-weight: bold;
+}
+
 .columnlist {
     padding: 0 10%;
     column-count: 3;
@@ -54,4 +58,9 @@
 .wordItem:focus {
   background-color: #c9b458;
   box-shadow: #c9b458 0 0 0 1.5px inset, #c9b458 0 2px 4px, #c9b458 0 7px 13px -3px, #c9b458 0 -3px 0 inset;
+}
+
+.popup-body {
+  width: 200px;
+  text-align: center;
 }
