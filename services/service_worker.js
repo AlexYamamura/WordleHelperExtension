@@ -97,7 +97,7 @@ function calculateWordBank(wordBank, guess, states) {
     }
   }
 
-  let regex = new RegExp(result + regexBase.join(''),'g');
+  let regex = new RegExp(result + regexBase.join(''),'gm');
 
   let updatedWordBank = wordBank.filter((word) => regex.test(word))
   return updatedWordBank;
