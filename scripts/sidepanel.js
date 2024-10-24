@@ -1,5 +1,8 @@
 function renderSidebar(wordlist) {
     let wordlistContainer = $('#wordlist');
+    let wordCountContainer = $('#wordCount');
+
+    wordCountContainer.html('Word Count: ' + wordlist.length);
     wordlistContainer.empty();
     wordlist.forEach(word => {
       word = word.toUpperCase();

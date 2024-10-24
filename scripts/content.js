@@ -67,12 +67,3 @@ function waitForElm(selector) {
 function checkWord(word, states) {
     chrome.runtime.sendMessage({"word":word, "states": states});
 }
-
-chrome.runtime.onMessage.addListener(
-    function(request, sender, sendResponse) {
-      if(request.wordlistGuess) {
-        
-      }
-      return true;
-    }
-  );

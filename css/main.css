@@ -1,10 +1,16 @@
 /* CSS Main Style */
 .header {
-    width: 33%;
+  width: 33%;
 }
 
 .header1 {
-    text-align: center;
+  text-align: center;
+}
+
+.header2 {
+  text-align: center;
+  font-size: medium;
+  color: darkgrey;
 }
 
 .external {
@@ -12,8 +18,8 @@
 }
 
 .columnlist {
-    padding: 0 10%;
-    column-count: 3;
+  padding: 0 10%;
+  column-count: 3;
 }
 
 .wordItem {
@@ -32,13 +38,13 @@
 }
 
 .wordItem:hover {
-    background-color: #c9b458;
-    box-shadow: #c9b458 0 2px 4px,#c9b458 0 7px 13px -3px,#c9b458 0 -3px 0 inset;
+  background-color: #c9b458;
+  box-shadow: #c9b458 0 2px 4px,#c9b458 0 7px 13px -3px,#c9b458 0 -3px 0 inset;
 }
 
 .wordItem:active {
-    background-color: #c9b458;
-    box-shadow: #c9b458 0 3px 7px inset;
+  background-color: #c9b458;
+  box-shadow: #c9b458 0 3px 7px inset;
 }
 
 .wordItem:after {
