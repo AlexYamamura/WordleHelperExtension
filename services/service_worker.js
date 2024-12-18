@@ -4,7 +4,7 @@ let currentTabId = null;
 chrome.tabs.onUpdated.addListener((tabId, info, tab) => {
   if (!tab.url) return;
   const url = new URL(tab.url);
-  onWordlePage(url.href, tabId);
+  return onWordlePage(url.href, tabId);
 });
 
 chrome.tabs.onActivated.addListener(({tabId, windowId}) => {
